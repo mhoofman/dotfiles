@@ -12,11 +12,6 @@ NODE_PATH="/usr/local/lib/node"
 # PROMPT
 # ------------------------------------------------------------------------
 
-GREEN="\[\033[0;32m\]"
-YELLOW="\[\033[0;33m\]"
-WHITE="\[\033[0;0m\]"
-PS_CLEAR="\[\033[0m\]"
-
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
