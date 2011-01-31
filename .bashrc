@@ -3,10 +3,11 @@
 # ------------------------------------------------------------------------
 
 PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin"
-PATH="/usr/local/bin:/usr/local/share/npm/bin:/usr/local/mysql/bin:$PATH"
+PATH="/usr/local/bin:/usr/local/share/npm/bin:$PATH"
+PATH="/usr/local/mysql/bin:$PATH"
 
-# node.js
-NODE_PATH="/usr/local/lib/node"
+# node.js require path
+export NODE_PATH="/usr/local/lib/node"
 
 # ------------------------------------------------------------------------
 # PROMPT
@@ -24,6 +25,7 @@ PS1="\u:\w\$(parse_git_branch)$ "
 
 alias du1='du -h --max-depth=1'
 alias vi='vim'
+alias m='mate'
 
 # ------------------------------------------------------------------------
 # LS AND DIRCOLORS
