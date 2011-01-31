@@ -26,7 +26,12 @@ PS1="\u:\w\$(parse_git_branch)$ "
 
 alias du1='du -h --max-depth=1'
 alias vi='vim'
+
+# Mac
 alias m='mate'
+
+# FreeBSD
+alias listen='sockstat -4 -l'
 
 # ------------------------------------------------------------------------
 # LS AND DIRCOLORS
