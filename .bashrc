@@ -24,7 +24,7 @@ PS1="\u@\h:\w\$(parse_git_branch)$ "
 # ALIASES
 # ------------------------------------------------------------------------
 
-alias du1='du -h --max-depth=1'
+alias dir_size='du -h | tail -n 1'
 alias vi='vim'
 
 # Mac
